@@ -1,0 +1,51 @@
+<!--
+    Problem- You want to define your document structure with new elements with header, footer, nav, aside, section, article elements.
+    Note- 
+    1. Header- Used to contain headlines for page/section or logos and navigational aids.
+    2. Footer- Contains info about page. Ex- Copyright
+    3. nav- Contains major navigational links.
+    4. aside- Contains info related to surrounding content or sidebar.
+    5. section- most generic of new html elements, containing content that can be grouped thematically or is related.
+    6. article- used for self-contained content. ex-blog entry
+    Containg elements for styling purposes use div
+    p and div both have block-level formatting but p is more semantic.
+    Most browser render content contained by these elements but some browsers don't recognize and treat
+    it as inline. To treat them as block-level - 
+    header, footer, aside, nav,article,section{
+        display:block;
+    }
+    For versions prior to IE9, add bit of JS so IE reconizes these elements and alloew you to style them-
+    document.createElement('header') and others...
+-->
+<!DOCTYPE html>
+    <html>
+        <head>
+        </head>
+        <body>
+            <header>
+                <h1>
+                    <abbr title="Hyper Text Markup Language">HTML</abbr>5, for fun &amp;
+                    Profit 
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="/Archive/">Archive</a></li>
+                        <li><a href="/About/">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <article>
+                <h2><code>nav</code> Isn't for <em>All</em> Links  </h2>
+            </article>
+            <aside>
+                <h2> HTMl5 elsewhere</h2>
+                <ul>
+                    <li><a href="#">Archive</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </aside>
+            <footer>
+                Copyright &copy; 2011
+            </footer>
+        </body>
+    </html>
