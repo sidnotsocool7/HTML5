@@ -1,0 +1,15 @@
+<!--
+    Problem- You need to define character encoding for your web page.
+    Solution- In <head> add a meta declaration for your character set.
+    Note- Some years ago, Google faced a croos-scripting site vulnerablilty beacuse of not defining.
+    If not defined it will take from HTTP server response header(Content-Type) and if not there it will take some default
+    If you want to include characters outside UTF-8, use NCR(Numeric character references) like
+    &#169, &copy.
+-->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+        </head>
+        <body></body>
+    </html>
